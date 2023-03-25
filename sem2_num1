@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int c;
+
+    printf("Введите строку: ");
+
+    while ((c = getchar()) != '\n') {
+        if (c != ' ' && c != '\t' && c != '\r') {
+            putchar(c);
+        }
+    }
+
+    printf("\n");
+
+    return 0;
+}
